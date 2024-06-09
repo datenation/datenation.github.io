@@ -1,0 +1,58 @@
+name: Run Repository Management Script
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install required packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apt-utils zstd xz-utils bzip2 gnupg curl git
+
+      - name: Ensure required tools are installed
+        run: |
+          for tool in apt-ftparchive zstd xz bzip2 git; do
+            if ! command -v $tool &> /dev/null; then
+              echo "Error: $tool is not installed."
+              exit 1
+            fi
+          done
+
+      - name: Clean up old files
+        run: |
+          echo "[Repository] Cleaning..."
+          rm -f Packages Packages.bz2 Packages.xz Packages.zst Release Release.gpg
+
+      - name: Generate Packages
+        run: |
+          echo "[Repository] Generating Packages..."
+          apt-ftparchive packages ./pool > Packages
+          zstd -q -c19 Packages > Packages.zst
+          xz -c9 Packages > Packages.xz
+          bzip2 -c9 Packages > Packages.bz2
+
+      - name: Generate Release
+        run: |
+          echo "[Repository] Generating Release..."
+          apt-ftparchive release -c ./repo.conf . > Release
+
+      - name: Push changes
+        run: |
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git config --global user.name "datenation"
+          git add .
+          git commit -m "Automated update from GitHub Actions"
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/datenation/datenation.github.io.git
+        env:
+          PAT: ${{ secrets.PAT }} 
+          EMAIL: ${{ secrets.EMAIL }}
