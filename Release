@@ -1,0 +1,33 @@
+Architectures: iphoneos-arm iphoneos-arm64
+Codename: ios
+Components: main
+Date: Sun, 09 Jun 2024 17:07:34 +0000
+Description: DateNation's Dump of Tweaks
+Label: DateNation
+Origin: DateNation's Repo
+Suite: stable
+Version: 2.0
+MD5Sum:
+ 602de5db32eaa31743e19c92681da6c6             1196 Packages
+ 9966b73b0c705007ea984ba0280906b7              654 Packages.bz2
+ 5c20076c74210af06c84468d8db11aab              652 Packages.xz
+ 23551935197fdc44623d5d43a5507ac5              580 Packages.zst
+ ca9ef7052e0bd6b75f978233bf1982ef              224 Release
+SHA1:
+ 3cc7da5669966c5b6a09c3b412d09548d44f16c4             1196 Packages
+ 6425d10f19d1c4eb09dd37460b28a244e4c44758              654 Packages.bz2
+ ccae4af4d0879f3f7f6f6bb551c9210f9ee13ab4              652 Packages.xz
+ 6aba95979bbad05fc35fe72091194191aece0d1e              580 Packages.zst
+ 8dfb55a4ac0bc353b4bd74ac98f091197de10edd              224 Release
+SHA256:
+ 10c18b4aeb15380c32d2716d09f3680ee929c1379f5fffd4bbb06e7281d73565             1196 Packages
+ 60c4114fb9963a7f8c726c645f36409949dea88959096fa17bb7d4c1cf7eb7bc              654 Packages.bz2
+ 3fae60a5e30c4bfd8d3b9cb720f361595943688aedc8b9d4c5da9b316a53e2ef              652 Packages.xz
+ d74584d282a932d4b2b60ac5047cfedba01c0e28bf71a0eb518b67a78d384f16              580 Packages.zst
+ 91caa997cccb29740a668ce73122167eba044afaee6c8888ea395f42c944d9f3              224 Release
+SHA512:
+ 188dc175c3adbfb44b068f1d91f92393a2d2d78a3780d575604263569f2d987740719685264ff2c8c8eee8906810313ee8d557dd38fef2033018f502a4abecea             1196 Packages
+ 304984431505ffd5846b5804f2e06bc5d18ea1d86bc95d9dd38e44bad2c4f22c70756d67fa76afcc61d3f34ca904a9f764301693c16e7bff95d3d0973ae3f812              654 Packages.bz2
+ a3c31d7d972bef9b42db2abebd6802c0e76c0a3a56ba0c252cf5c6f90a49d8df07feea2db8379727f05d66c2990cd48619ef01b9845a2a79b5f2623df2c43f64              652 Packages.xz
+ 274dc5f718a014a8649f630df8a0edc457760323aab32ffc6013f1857287f5869be574965e29c57fa7ffa255a7bdf333145d509051cf39b8db69acf98e67e119              580 Packages.zst
+ 3be1f8d71575733454e45b215950819cd721cfec07591c4d39f00f43e2dd587fb249a0617650e29932f08078462b4c543ae67a6c9dac3013378d7914552af459              224 Release
