@@ -1,15 +1,15 @@
 Package: com.datenation.fetcher
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm
 Version: 1.0.0
 Section: Tweaks
 Maintainer: DateNation
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate
 Filename: ./pool/com.datenation.fetcher_iphoneos-arm.deb
-Size: 59382
-MD5sum: 3443cf9511cf78881440a40c9d4d1e9b
-SHA1: 505aee63cad9f035b4862ba708047cd9e536c2c4
-SHA256: df9b849dbfec83bffd92b562917b6468bb481e7b0bc0357d3eef5595e59eabbc
-SHA512: 3f977d50a9e05c6928dff70c16abd8043e616ff6adb8af91b41c1a5b603a9c4af24fa554423ec0e754cb97fa6811aac8a541035c1bf19431e15371a018275d19
+Size: 59366
+MD5sum: d6bbb530a4d27175c315ba179d675244
+SHA1: b54b8bac9dff63f756ebbab1dd299a3d35599194
+SHA256: 6d95ed64ba355743bbd80b7701e599b59ec22b35af76ab193bb81b3f6a579e7c
+SHA512: 7fcb90ca5bb6fdc7ffcc113a16cfc5d73dff7853ff82583ab3d00e50c751b0d094215974a3565d4e5c316793f8da832705986da8b162803d1cf81c05b9d6fe02
 Description: DateNation Fetcher
 Name: DateNationFetcher
 Author: DateNation
@@ -19,13 +19,13 @@ Architecture: iphoneos-arm64
 Version: 1.0.0
 Section: Tweaks
 Maintainer: DateNation
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate
 Filename: ./pool/com.datenation.fetcher_iphoneos-arm64.deb
-Size: 59630
-MD5sum: 0c4879accb7fbb152a437f553ff61649
-SHA1: 7fa1d58c89cec1eb0a06e16a6e5e92694f44b90c
-SHA256: c078765b7df02fa49b0f9fc033a533907c7a57f554c30768026804286acc2fb1
-SHA512: c71d9d2106b272c97c84ea49a270eb80b5a5e025b4b631444f6bb47831f913882381b612dd349c4513ddf21e2124a5ae5c27721de00daa375af875a95fed25fd
+Size: 59402
+MD5sum: d38b7d9226a4d4a37b0940d39871e628
+SHA1: c69a952944911a3f3ea384f4749daaa900de9a6c
+SHA256: b99332654c3337ee56d18e733a4e5f531053f7887048a3f3ab57f6279a315ca6
+SHA512: 20b655224ee4408169da8f2703755f94b527bc7798cf9c05e5bb054a9611cb6179924a36583f78604dd5c12509dab9e4155c05bbe34300ad5a86fe4a56e09039
 Description: DateNation Fetcher
 Name: DateNationFetcher
 Author: DateNation
